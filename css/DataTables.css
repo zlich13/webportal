@@ -1,0 +1,85 @@
+	#form_div, #tbl_filter, #tbl_length label, .dt-buttons{
+		display: flex;
+		justify-content: space-between;
+		grid-gap: 1%;
+		margin-bottom: 10px;
+	}
+	#tbl_filter, #tbl_length{
+		text-align: left;
+		float: left;
+		margin-right: 10px;
+		width: calc(30% - 10px);
+	}
+	#tbl_filter label, #tbl_length label{
+		width: 100%;
+	}
+	#form_div, .dt-buttons{
+		width: 70%;
+	}
+	#tbl_filter input{
+		margin: 0;
+	}
+	.filter-div{
+		width: 45%;
+	} 
+	#button-div{
+		margin-top: 24px;
+		width: 10%;
+	}
+	label{
+		font-size: 16px;
+		font-weight: normal;
+	}
+	#apply{
+		padding: 0;
+		border-radius: 3px;
+	}
+	input, select, #apply{
+		height: 30px;
+		width: 100%;
+	}
+	input, select{
+		border: 1px solid #aaa;
+    	border-radius: 3px;
+		outline: 0;
+		background: white !important;
+	}
+	.dt-buttons {
+		float: right !important;
+	}
+	div.dt-buttons button{
+		width: calc(100% / 5);
+		height: 30px;
+		margin: 0;
+		padding: 0;
+	}
+	tbody tr:hover {
+		cursor: pointer ;
+	}
+	#tables_div{
+		width: 100%;
+		overflow: auto;
+	}
+
+	@media(max-width: 640px){
+  		#tbl_filter{
+    		display: block;
+    		margin: 0;
+  		}
+  		#form_div, #tbl_filter, #button-div{
+    		width: 100%;
+  		}
+	}
+	@media(max-width: 560px){
+  		#tbl_length, .dt-buttons{
+  			width: 100%;
+  		}
+	}
+	@media(max-width: 480px){
+  		#form_div{
+  			display: block;
+  		}
+  		.filter-div{
+  			width: 100%;
+  		}
+	}
